@@ -2,6 +2,8 @@ import './App.css';
 import { Container } from 'react-bootstrap';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import HomeScreen from './Screens/HomeScreen';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
@@ -10,7 +12,7 @@ function App() {
 
       <main className='py-3'>
         <Container>
-          <h1>Welcome To proshop</h1>
+          <Outlet/>
         </Container>
       </main>
       <Footer />
